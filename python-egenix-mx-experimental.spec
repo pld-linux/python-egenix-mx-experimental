@@ -66,24 +66,24 @@ rm -rf $RPM_BUILD_ROOT
 
 %dir %{mxdir}/Number
 %dir %{mxdir}/Number/mxNumber
+%attr(755,root,root) %{mxdir}/Number/mxNumber/*.so
 %{mxdir}/Number/*.py[co]
 %{mxdir}/Number/mxNumber/*.py[co]
-%{mxdir}/Number/mxNumber/*.so
 
 %dir %{mxdir}/Tidy
 %dir %{mxdir}/Tidy/mxTidy
+%attr(755,root,root) %{mxdir}/Tidy/mxTidy/*.so
 %{mxdir}/Tidy/*.py[co]
 %{mxdir}/Tidy/mxTidy/*.py[co]
-%{mxdir}/Tidy/mxTidy/*.so
 
 %dir %{mxdir}/UID
 %dir %{mxdir}/UID/mxUID
+%attr(755,root,root) %{mxdir}/UID/mxUID/*.so
 %{mxdir}/UID/*.py[co]
 %{mxdir}/UID/mxUID/*.py[co]
-%{mxdir}/UID/mxUID/*.so
 
 %dir %{mxdir}/URL
 %dir %{mxdir}/URL/mxURL
+%attr(755,root,root) %{mxdir}/URL/mxURL/*.so
 %{mxdir}/URL/*.py[co]
 %{mxdir}/URL/mxURL/*.py[co]
-%{mxdir}/URL/mxURL/*.so
