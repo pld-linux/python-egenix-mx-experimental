@@ -40,7 +40,7 @@ Kolekcja rozszerzeñ dla jêzyka Python napisana w ANSI C i Pythonie
 dodaj±ca szerokie spektrum u¿ytecznych rozszerzeñ dla programowania w
 jêzyku Python.
 
-Ten pakiet zawiera eksperymentalne podpakiety z serii. Prosze mieæ na
+Ten pakiet zawiera eksperymentalne podpakiety z serii. Proszê mieæ na
 uwadze ¿e oprogramowanie w tych pakietach jest ci±gle w stanie alfa i
 nie spe³nia wymagañ opgrogramowania w wersji produkcyjnej.
 
