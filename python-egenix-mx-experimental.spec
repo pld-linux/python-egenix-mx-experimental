@@ -2,24 +2,19 @@
 
 %define		module egenix-mx-experimental
 %define		mxdir %{py_sitedir}/mx
-%define 	name 	python-%{module}
-%define 	version 	0.7.0
-%define 	release 	0.9
 
 Summary:	eGenix mx-Extensions - EXPERIMENTAL package
 Summary(pl):	eGenix mx-Extensions - pakiet EKSPERYMENTALNY
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		python-module
+Version:	0.7.0
+Release:	0.9
 Source0:	http://www.egenix.com/files/python/%{module}-%{version}.tar.gz
 Copyright:	Copyright (c) 2000-2001, eGenix.com Software GmbH, All Rights Reserved (partly only for non-comercial use)
 Group:		Libraries/Python
-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Vendor:		eGenix.com Software GmbH, Langenfeld, Germany <info@egenix.com>
-Packager:	Mateusz Korniak (matkor@pld.org.pl) 
 Requires:	python-egenix-mx-base
-Url:            http://www.lemburg.com/files/python/eGenix-mx-Extensions.html
+Url:		http://www.lemburg.com/files/python/eGenix-mx-Extensions.html
 
 %description
 The eGenix mx Extension Series are a collection of Python extensions
@@ -39,12 +34,12 @@ license information.
 
 %description(pl)
 Kolekcja rozszerze dla jêzyka Python napisana w ANSI C i Pythonie
-dodaj±ca szerokie spektrum u¿ytecznych rozszerzeñ dla programowania
-w jêzyku Python.
+dodaj±ca szerokie spektrum u¿ytecznych rozszerzeñ dla programowania w
+jêzyku Python.
 
-Ten pakiet zawiera eksperymentalne podpakiety z serii. Prosze mieæ
-na uwadze ¿e oprogramowanie w tych pakietach jest ci±gle w stanie alfa
-i nie spe³nia wymagañ opgrogramowania w wersji produkcyjnej.
+Ten pakiet zawiera eksperymentalne podpakiety z serii. Prosze mieæ na
+uwadze ¿e oprogramowanie w tych pakietach jest ci±gle w stanie alfa i
+nie spe³nia wymagañ opgrogramowania w wersji produkcyjnej.
 
 To oprogramowanie jest dostarczone przez eGenix.com. Za³±czone pakiety
 s± udostêpniane przy u¿yciu eGenix.com Public License albo eGenix.com
@@ -53,7 +48,6 @@ licencje dla poszczególnych podpakietów b±d¼ skontaktowaæ siê z eGenix
 bezpo¶rednio w tej sprawie.
 
 %prep
-
 %setup -q -n %{module}-%{version}
 
 %build
@@ -61,28 +55,35 @@ env CFLAGS="%{rpmcflags}" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
+python setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-#%files -f INSTALLED_FILES
-%files 
+%files
+%defattr(644,root,root,755)
+%doc README mx/Number/Doc mx/Tidy/Doc mx/UID/Doc mx/URL/Doc
+
+%dir %{mxdir}/Number
+%dir %{mxdir}/Number/mxNumber
 %{mxdir}/Number/*.py[co]
 %{mxdir}/Number/mxNumber/*.py[co]
 %{mxdir}/Number/mxNumber/*.so
 
+%dir %{mxdir}/Tidy
+%dir %{mxdir}/Tidy/mxTidy
 %{mxdir}/Tidy/*.py[co]
 %{mxdir}/Tidy/mxTidy/*.py[co]
 %{mxdir}/Tidy/mxTidy/*.so
 
+%dir %{mxdir}/UID
+%dir %{mxdir}/UID/mxUID
 %{mxdir}/UID/*.py[co]
 %{mxdir}/UID/mxUID/*.py[co]
 %{mxdir}/UID/mxUID/*.so
 
+%dir %{mxdir}/URL
+%dir %{mxdir}/URL/mxURL
 %{mxdir}/URL/*.py[co]
 %{mxdir}/URL/mxURL/*.py[co]
 %{mxdir}/URL/mxURL/*.so
-
-%defattr(644,root,root,755)
-%doc README mx/Number/Doc mx/Tidy/Doc mx/UID/Doc mx/URL/Doc
