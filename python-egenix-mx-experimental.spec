@@ -9,7 +9,7 @@ Summary:	eGenix mx-Extensions - EXPERIMENTAL package
 Summary(pl):	eGenix mx-Extensions - pakiet EKSPERYMENTALNY
 Name:		python-%{module}
 Version:	0.7.0
-Release:	2
+Release:	3
 License:	Copyright (c) 2000-2001, eGenix.com Software GmbH, All Rights Reserved (partly only for non-comercial use)
 Vendor:		eGenix.com Software GmbH, Langenfeld, Germany <info@egenix.com>
 Group:		Libraries/Python
