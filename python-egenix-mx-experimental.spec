@@ -1,7 +1,6 @@
 # TODO:
 # - split into subpackages
 #
-%include	/usr/lib/rpm/macros.python
 
 %define		module	egenix-mx-experimental
 %define		mxdir	%{py_sitedir}/mx
