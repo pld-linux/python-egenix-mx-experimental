@@ -38,7 +38,7 @@ eGenix.com Commercial License and/or other licenses. Please check the
 subpackage documentation for details or contact eGenix.com for more
 license information.
 
-%description(pl)
+%description -l pl
 Kolekcja rozszerzeñ dla jêzyka Python napisana w ANSI C i Pythonie
 dodaj±ca szerokie spektrum u¿ytecznych rozszerzeñ dla programowania w
 jêzyku Python.
