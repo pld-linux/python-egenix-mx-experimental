@@ -1,3 +1,9 @@
+
+#
+# todo:
+# - split into subpackages
+#
+
 %include	/usr/lib/rpm/macros.python
 
 %define		module egenix-mx-experimental
