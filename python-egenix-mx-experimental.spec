@@ -18,6 +18,7 @@ License:	Copyright (c) 2000-2001, eGenix.com Software GmbH, All Rights Reserved 
 Vendor:		eGenix.com Software GmbH, Langenfeld, Germany <info@egenix.com>
 Group:		Libraries/Python
 Source0:	http://www.egenix.com/files/python/%{module}-%{version}.tar.gz
+# Source0-md5:	1cfedef4f3582ed72857afb2c567207e
 URL:		http://www.lemburg.com/files/python/eGenix-mx-Extensions.html
 Requires:	python-egenix-mx-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
