@@ -1,9 +1,7 @@
 # TODO:
 # - split into subpackages
 #
-
 %include	/usr/lib/rpm/macros.python
-
 %define		module egenix-mx-experimental
 %define		mxdir %{py_sitedir}/mx
 
@@ -60,7 +58,9 @@ env CFLAGS="%{rpmcflags}" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
+python setup.py install \
+	--optimize=2 \
+	--root=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
