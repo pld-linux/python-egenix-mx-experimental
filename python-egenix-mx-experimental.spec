@@ -3,8 +3,8 @@
 #
 %include	/usr/lib/rpm/macros.python
 
-%define		module egenix-mx-experimental
-%define		mxdir %{py_sitedir}/mx
+%define		module	egenix-mx-experimental
+%define		mxdir	%{py_sitedir}/mx
 
 Summary:	eGenix mx-Extensions - EXPERIMENTAL package
 Summary(pl):	eGenix mx-Extensions - pakiet EKSPERYMENTALNY
