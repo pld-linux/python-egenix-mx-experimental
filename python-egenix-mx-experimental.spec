@@ -6,7 +6,7 @@
 %define		mxdir	%{py_sitedir}/mx
 
 Summary:	eGenix mx-Extensions - EXPERIMENTAL package
-Summary(pl):	eGenix mx-Extensions - pakiet EKSPERYMENTALNY
+Summary(pl.UTF-8):   eGenix mx-Extensions - pakiet EKSPERYMENTALNY
 Name:		python-%{module}
 Version:	0.7.0
 Release:	4
@@ -36,20 +36,20 @@ eGenix.com Commercial License and/or other licenses. Please check the
 subpackage documentation for details or contact eGenix.com for more
 license information.
 
-%description -l pl
-Kolekcja rozszerzeñ dla jêzyka Python napisana w ANSI C i Pythonie
-dodaj±ca szerokie spektrum u¿ytecznych rozszerzeñ dla programowania w
-jêzyku Python.
+%description -l pl.UTF-8
+Kolekcja rozszerzeÅ„ dla jÄ™zyka Python napisana w ANSI C i Pythonie
+dodajÄ…ca szerokie spektrum uÅ¼ytecznych rozszerzeÅ„ dla programowania w
+jÄ™zyku Python.
 
-Ten pakiet zawiera eksperymentalne podpakiety z serii. Proszê mieæ na
-uwadze ¿e oprogramowanie w tych pakietach jest ci±gle w stanie alfa i
-nie spe³nia wymagañ opgrogramowania w wersji produkcyjnej.
+Ten pakiet zawiera eksperymentalne podpakiety z serii. ProszÄ™ mieÄ‡ na
+uwadze Å¼e oprogramowanie w tych pakietach jest ciÄ…gle w stanie alfa i
+nie speÅ‚nia wymagaÅ„ opgrogramowania w wersji produkcyjnej.
 
-To oprogramowanie jest dostarczone przez eGenix.com. Za³±czone pakiety
-s± udostêpniane przy u¿yciu eGenix.com Public License albo eGenix.com
-Commercial License albo pod innymi licencjami. Nale¿y sprawdziæ
-licencje dla poszczególnych podpakietów b±d¼ skontaktowaæ siê z eGenix
-bezpo¶rednio w tej sprawie.
+To oprogramowanie jest dostarczone przez eGenix.com. ZaÅ‚Ä…czone pakiety
+sÄ… udostÄ™pniane przy uÅ¼yciu eGenix.com Public License albo eGenix.com
+Commercial License albo pod innymi licencjami. NaleÅ¼y sprawdziÄ‡
+licencje dla poszczegÃ³lnych podpakietÃ³w bÄ…dÅº skontaktowaÄ‡ siÄ™ z eGenix
+bezpoÅ›rednio w tej sprawie.
 
 %prep
 %setup -q -n %{module}-%{version}
