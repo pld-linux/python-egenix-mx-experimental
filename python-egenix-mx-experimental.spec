@@ -6,7 +6,7 @@
 %define		mxdir	%{py_sitedir}/mx
 
 Summary:	eGenix mx-Extensions - EXPERIMENTAL package
-Summary(pl.UTF-8):   eGenix mx-Extensions - pakiet EKSPERYMENTALNY
+Summary(pl.UTF-8):	eGenix mx-Extensions - pakiet EKSPERYMENTALNY
 Name:		python-%{module}
 Version:	0.7.0
 Release:	4
