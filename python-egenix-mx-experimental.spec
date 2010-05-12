@@ -11,13 +11,17 @@ Name:		python-%{module}
 Version:	0.7.0
 Release:	6
 License:	Copyright (c) 2000-2001, eGenix.com Software GmbH, All Rights Reserved (partly only for non-comercial use)
-Vendor:		eGenix.com Software GmbH, Langenfeld, Germany <info@egenix.com>
 Group:		Libraries/Python
 Source0:	http://www.egenix.com/files/python/%{module}-%{version}.tar.gz
 # Source0-md5:	1cfedef4f3582ed72857afb2c567207e
 URL:		http://www.lemburg.com/files/python/eGenix-mx-Extensions.html
-%pyrequires_eq	python-libs
+BuildRequires:	gmp-devel
+BuildRequires:	python
+BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 Requires:	python-egenix-mx-base
+%pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
