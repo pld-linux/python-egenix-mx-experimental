@@ -15,6 +15,7 @@ Group:		Libraries/Python
 Source0:	http://www.egenix.com/files/python/%{module}-%{version}.tar.gz
 # Source0-md5:	1cfedef4f3582ed72857afb2c567207e
 URL:		http://www.lemburg.com/files/python/eGenix-mx-Extensions.html
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	gmp-devel
 BuildRequires:	mpfr-devel
 BuildRequires:	python
